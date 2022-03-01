@@ -13,4 +13,5 @@
    - '--source'
    - '.'
    - '--quiet'
+timeout: 1800s
  

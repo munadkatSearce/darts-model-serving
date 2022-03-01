@@ -12,4 +12,5 @@
    - 'darts-rnn-from-pipeline'
    - '--source'
    - '.'
+   - '--quiet'
  

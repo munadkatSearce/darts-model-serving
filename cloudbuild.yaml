@@ -1,0 +1,15 @@
+ steps:
+ - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+   entrypoint: gcloud
+   args:
+   - 'run'
+   - 'deploy'
+   - '--port'
+   - '5050'
+   - '--allow-unauthenticated'
+   - '--region'
+   - 'us-central1'
+   - 'darts-rnn-from-pipeline'
+   - '--source'
+   - '.'
+ 

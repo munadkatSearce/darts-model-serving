@@ -1,21 +1,21 @@
- steps:
- - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-   entrypoint: gcloud
-   args:
-   - 'run'
-   - 'deploy'
-   - '--port'
-   - '5050'
-   - '--allow-unauthenticated'
-   - '--region'
-   - 'us-central1'
-   - 'darts-rnn-from-pipeline'
-   - '--source'
-   - '.'
-   - '--quiet'
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args:
+  - 'run'
+  - 'deploy'
+  - '--port'
+  - '5050'
+  - '--allow-unauthenticated'
+  - '--region'
+  - 'us-central1'
+  - 'darts-rnn-from-pipeline'
+  - '--source'
+  - '.'
+  - '--quiet'
 timeout: 1800s
- 
+
 options:
   logging: CLOUD_LOGGING_ONLY 
   machineType: 'N1_HIGHCPU_8'  # Or your preferred machine type
-  serviceAccount: 'applied-ai-practice00@appspot.gserviceaccount.com' # Replace with your service account email
+  serviceAccount: 'your-service-account-email@your-project-id.iam.gserviceaccount.com' # Replace with your service account email

@@ -1,4 +1,4 @@
-FROM gcr.io/impact-analytics-sandbox/create_base_image:v1
+FROM python:3.9
 
 COPY ./serve.py /home/model-server/
 COPY ./model.pth.tar /home/model-server/

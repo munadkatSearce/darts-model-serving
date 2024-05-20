@@ -16,4 +16,6 @@
 timeout: 1800s
  
 options:
-  logging: CLOUD_LOGGING_ONLY  #  Or CLOUD_LOGGING_ONLY if you don't need GCS logs
+  logging: CLOUD_LOGGING_ONLY 
+  machineType: 'N1_HIGHCPU_8'  # Or your preferred machine type
+  serviceAccount: 'applied-ai-practice00@appspot.gserviceaccount.com' # Replace with your service account email

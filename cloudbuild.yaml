@@ -15,3 +15,6 @@
    - '--quiet'
 timeout: 1800s
  
+options:
+  logging: CLOUD_LOGGING_ONLY  #  Or CLOUD_LOGGING_ONLY if you don't need GCS logs
+  machineType: 'N1_HIGHCPU_8' # Or your preferred machine type

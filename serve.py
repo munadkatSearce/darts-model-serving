@@ -7,6 +7,11 @@ model = RNNModel.load_model("/home/model-server/model.pth.tar")
 
 app = Flask(__name__)
   
+
+
+
+
+  
 @app.route('/predict', methods=["GET", "POST"])
 def predict():
     if request.method=="POST":
